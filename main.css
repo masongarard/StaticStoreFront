@@ -1,0 +1,299 @@
+/*Common elements*/
+body {
+    font-size: 67.5%;
+    font-family: Tahoma, Geneva, sans-serif;
+    background: rgb(11, 12, 59) url(assets/dnd_parchment.jpg) no-repeat fixed top center;
+    padding: 0 5px 5px 5px;
+    margin: 0;
+    -webkit-background-size: 90% 90%;
+    -moz-background-size: 100% 100%;
+    background-size: 95% 100%;
+    -o-background-size: 100% 100%;
+}
+h1 {
+    color:rgb(99, 6, 6);
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+    text-align: center
+}
+h2 {
+    color: rgb(99, 6, 6);
+    font-size: 1em;
+    padding: 0px;
+    margin: 0.5em 0 0.35em 0;
+    text-align: center;
+}
+h5 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.2em;
+    margin: 0 0 10px;
+    text-align: left
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #555;
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+
+.statInput{
+    width: 2.5em;
+}
+
+button {
+    color: #C64322;
+    background-color: black;
+    display: inline-block;
+    margin: 7px 0.75em 0 0;
+    padding: 0.2em 0.5em;
+    border: 1px solid #C64322;
+    text-transform: uppercase;
+    box-shadow: 0 0 .5em #867453
+}
+button:hover {
+    background-color: silver;
+    border: 1px solid #745b2f;
+}
+
+
+/*Header*/
+
+@font-face {
+    font-family: 'indianaJones'; 
+    src: url('assets/pixel-sagas_adventure/Adventure.otf'); 
+}
+header {
+    
+    height: 250px;
+    width:100%;
+    top: 100px;
+    padding: 2.5em 0 0.5em;
+    margin: 0 2.0em 2.0em 2.0em;
+    background: rgb(11, 12, 59)  center 50px;
+    }
+    header h1 {
+    font-family: "indianaJones", Times, serif;
+    color: #f0b30d;
+    font-size: 3.8em;
+    letter-spacing: -0.025em;
+    margin: 0 0 5px;    
+    text-align: center;
+    text-shadow: 1px 2px 0 #cf5922; 
+    }
+    header h2 {
+    font-weight: 300;
+    font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+    font-size: 3em;
+    color: rgb(230, 138, 0);
+    margin: -0.4em 0 0 1.0em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    }
+    .krogmor {
+        position: fixed;
+        top: 30px;
+    }
+/*Main Grid*/
+.mainGrid {
+    display: grid;
+    position: relative;
+    top: 0;
+    right: -15%;
+    margin: 5px 5px 5px 5px;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 150px;
+    row-gap: 1em;
+  }
+/*Nav Bars*/
+nav {
+    position: relative;
+    left: 0%;
+    top: 0;
+    color: #000;
+    font-size: 1.7em;
+    font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+    letter-spacing: 0.04em;
+    text-align: center;
+    padding: 1.0em 1.0em 0.5em;
+    margin: 1.0em 0 ;
+}
+nav ul {
+    top: -50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+nav li a, nav li a:visited {
+    text-decoration: none;
+    color: rgb(197, 180, 25);
+    padding: 0.3em 0.6em;
+}
+nav li a:hover {
+    color:rgb(197, 180, 25);
+    background-color: rgba(241, 36, 9, 0.425);
+}
+/* D&D Box*/
+
+
+.stat-block {
+    text-align: left;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;    
+    background: #FDF1DC;
+    padding: 5px 10px 20px;
+    box-shadow: 0 0 1.5em #867453;
+  }
+  .stat-block.wide{
+    width: 10%;
+    min-width: 280px;
+    text-align: center;
+  }
+  .stat-block.wide .section-left
+  {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: left;
+  }
+  .emblem{
+    position: absolute;
+    top: 7%;
+    right: 2.5%;
+    width: 100px;
+    height: 100px
+     
+}
+  .stat-block.wide .section-left{
+    margin-right: 1.5%;    
+  }
+  .stat-block.wide .section-right{
+    margin-left: 1.5%;
+    width: 50%
+  }
+
+  .orange-border{
+    display: block;
+    background: #E69A28;
+    border: 1px solid #000;
+    height: 5px;
+    padding: 0 10px 0;
+    margin: -10px -10px 0;
+    box-sizing: initial;
+  }
+  .orange-border.bottom{
+    margin: 15px -10px -20px;
+    box-sizing: initial;
+  }
+  .tapered-rule{
+    display: block;
+    width: 50%;
+    height: 5px;
+    margin: 5px 0 5px 0;
+    padding: 2px 0 2px 0;
+    color: #922610;
+    fill: #922610;
+    stroke: #922610;
+  }
+  .creature-heading h1{
+    font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+    color: #922610;
+    font-size: 23px;
+    line-height: 1.2em;
+    margin: 10px 0 0;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: left;
+  }
+  .creature-heading h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.2em;
+    margin: 0 0 10px;
+    text-align: left
+  }
+  .property-line h4,
+  .property-line p{
+    display: inline;
+    margin: 0;
+    color: #922610;
+    font-size: 13.5px;
+    line-height: 1.2em;
+  }
+  .property-line h4{
+    color: #7A200D;
+  }
+  .property-line{
+    text-indent: -1em;
+    padding-left: 1.1em;
+    line-height: 1.4em;
+  }
+  .property-line.first{
+    margin: 8px 0 0
+  }
+  .property-line.last{
+    margin: 0 0 10px;
+  }
+  .abilities{
+    text-align: left;
+    color: #922610;
+  }
+  .abilities > div{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15.5%;
+    min-width: 40px; 
+    font-size: 12px;
+    line-height: 1em;
+  }
+  .abilities h4{
+    margin: 10px 0 5px;
+    font-size: 14px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #7A200D;
+  }
+  .abilities p{
+    margin: 0 0 10px;
+    line-height: 1.2em;
+  }
+  .property-block h4,
+  .property-block p{
+    font-size: 13.5px;
+    line-height: 1.2em;
+    display: inline;
+    margin: 0;
+  }
+  .property-block h4{
+    font-style: italic;
+  }
+  .property-block{
+    padding: 10px 2px 0;
+  }
+  
+
+  .top-stats{
+      width: 280px
+      margin 0;
+  }
+  
+  
+  
+/*Sidebar Section*/
+/*Main Section*/
+/*Footer*/
+
+
